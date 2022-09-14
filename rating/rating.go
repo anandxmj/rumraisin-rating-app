@@ -1,6 +1,7 @@
 package rating
 
 import (
+	"rumraisin-rating-app/ratingsdb"
 	"time"
 
 	"github.com/beevik/guid"
@@ -25,14 +26,28 @@ type CreateRatingResponse struct {
 }
 
 func Create(crr *CreateRatingRequest) *CreateRatingResponse {
+	guid := guid.New().String()
+	timestamp := time.UTC.String()
 	response := &CreateRatingResponse{
-		guid.New().String(),
-		time.UTC.String(),
+		guid,
+		timestamp,
 		crr.UserId,
 		crr.ProductId,
 		crr.LocationName,
 		crr.Rating,
 		crr.UserNotes,
 	}
+
+	rating := &ratingsdb.Rating{
+		Id:           response.Id,
+		TimeStamp:    response.TimeStamp,
+		UserId:       response.UserId,
+		ProductId:    response.ProductId,
+		LocationName: response.LocationName,
+		Rating:       response.Rating,
+		UserNotes:    response.UserNotes,
+	}
+
+	ratingsdb.Create(rating)
 	return response
 }
