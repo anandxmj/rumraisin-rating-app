@@ -62,3 +62,9 @@ https://rumraisinstorage.table.core.windows.net/?sv=2021-06-08&ss=bfqt&srt=sco&s
 
 TABLE:
 https://rumraisinstorage.table.core.windows.net/ratings
+
+
+MANAGED IDs
+rumraisin-rating-app
+ede8d234-db1f-4c0b-88cc-8453cc8f9fe0
+
