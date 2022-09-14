@@ -61,7 +61,8 @@ Table service SAS URL:
 https://rumraisinstorage.table.core.windows.net/?sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2022-09-17T22:00:59Z&st=2022-09-14T14:00:59Z&spr=https,http&sig=1z%2BQ%2Bc%2B1ub7Z7%2BipDIYrjHYMdr1YsBb7T6fkSwSwqzA%3D
 
 TABLE:
-https://rumraisinstorage.table.core.windows.net/ratings
+https://rumraisinstorage.table.core.windows.net/ratings/?sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2022-09-17T22:00:59Z&st=2022-09-14T14:00:59Z&spr=https,http&sig=1z%2BQ%2Bc%2B1ub7Z7%2BipDIYrjHYMdr1YsBb7T6fkSwSwqzA%3D
+
 
 
 MANAGED IDs
