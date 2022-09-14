@@ -1,30 +1,45 @@
 # rumraisin-rating-app
 
 RSG: rumraisin 
-Sub: Azure subscription 1 
+
+Sub: Azure subscription 1
+
 SubID: 9697bd55-1f87-4128-a7c7-c82bc0afa083 
 
 Function Apps:
+
 rumraisin-rating-app (lin, custom)
+
 https://rumraisin-rating-app.azurewebsites.net
 
 rumraisin-getratings (win, .net 6)
+
 https://rumraisin-getratings.azurewebsites.net
 
+
 rumraisin-getrating (win, .net 6)
+
 https://rumraisin-getrating.azurewebsites.net
 
 
 App Insights:
+
 rumraisinappinsight
+
 Instrumentation Key: a47de9b3-c896-4d47-92ad-3d9b88a609e1
+
 Workspace: DefaultWorkspace-9697bd55-1f87-4128-a7c7-c82bc0afa083-CUS
 
 
+
 Key Vault:
+
 Used to store API endpoints (getusers, getproducts)
+
 rumraisinkv
+
 https://rumraisinkv.vault.azure.net/
+
 
 Storage (gen purp, v2)
 rumraisinstorage
