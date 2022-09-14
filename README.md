@@ -16,6 +16,10 @@ rumraisin-getrating (win, .net 6)
 https://rumraisin-getrating.azurewebsites.net
 
 
+Logic App:
+rumraisin-logicapp (consumption)
+https://prod-25.centralus.logic.azure.com:443/workflows/9d81c49b741745279a12e89fc0b6f8ca
+
 App Insights:
 rumraisinappinsight
 Instrumentation Key: a47de9b3-c896-4d47-92ad-3d9b88a609e1
