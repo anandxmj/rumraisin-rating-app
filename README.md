@@ -1,8 +1,8 @@
 # rumraisin-rating-app
 
-RSG: rumraisin
-Sub: Azure subscription 1
-SubID: 9697bd55-1f87-4128-a7c7-c82bc0afa083
+RSG: rumraisin 
+Sub: Azure subscription 1 
+SubID: 9697bd55-1f87-4128-a7c7-c82bc0afa083 
 
 Function Apps:
 rumraisin-rating-app (lin, custom)
