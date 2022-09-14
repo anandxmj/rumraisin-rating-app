@@ -97,3 +97,10 @@ var mongoClient = new MongoClient(settings);
 
 PRIMARY CONNECTION STRING
 mongodb://rumraisin-cosmosmongodb:LRCc2dBrv6BPO30yqRF3BcnrAshSJ68AcZcexrZRTQnaP2P7tpXD1y0jc9rTA6i66ukAlzeiXWNs22EOpLWv7Q==@rumraisin-cosmosmongodb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@rumraisin-cosmosmongodb@
+
+
+
+App Settings/Env Vars/os.environment Variables
+"sas_token" = just the sas token
+"table_connection_string" = the full table connection string
+
