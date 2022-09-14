@@ -68,3 +68,6 @@ MANAGED IDs
 rumraisin-rating-app
 ede8d234-db1f-4c0b-88cc-8453cc8f9fe0
 
+rumraisin-logicapp
+e15d9c7e-7995-4dec-bc3d-d8b384ffbab1
+
