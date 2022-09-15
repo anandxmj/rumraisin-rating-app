@@ -14,7 +14,6 @@ using System.Text.Json;
 namespace GetRating
 {
 
-
     public class Rating
     {
         public string Id { get; set; }
@@ -32,8 +31,11 @@ namespace GetRating
         public static void InitGetRatingDTO()
         {
         }
-            public static List<Rating> GetRatingList()
+        public static List<Rating> GetRatingList()
         {
+
+
+
             List<Rating> ratings = new List<Rating>();
 
 
@@ -96,7 +98,7 @@ namespace GetRating
         }
     }
 
-        public static class GetRating
+    public static class GetRating
     {
         [FunctionName("GetRating")]
         public static async Task<IActionResult> Run(
@@ -104,7 +106,9 @@ namespace GetRating
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
+            //        public static string connectionstring = System.Environment.GetEnvironmentVariable("table_connection_string", EnvironmentVariableTarget.Process);
 
+            //string connectionstr = connectionstring;
             string ratingId = req.Query["ratingId"];
 
             Rating requestedRating=new Rating();
