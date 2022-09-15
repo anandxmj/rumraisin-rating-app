@@ -4,13 +4,13 @@ pipeline {
 
   // Ensure the desired Go version is installed for all stages,
   // using the name defined in the Global Tool Configuration
-  tools { go '1.19' }
+  tools { go '1.19.1' }
 
   stages {
     stage('Build') {
       steps {
         // Output will be something like "go version go1.19 darwin/arm64"
-        sh 'go version'
+        sh 'GOOS=linux GOARCH=amd64 go build -o rumraisin-rating-app main.go'
       }
     }
   }
