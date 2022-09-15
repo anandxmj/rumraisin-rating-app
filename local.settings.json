@@ -2,6 +2,8 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "custom",
-    "AzureWebJobsStorage": ""
+    "AzureWebJobsStorage": "",
+    "ratingsdburl": "DefaultEndpointsProtocol=https;AccountName=rumraisinstorage;AccountKey=pyItfboXOiqmw0QgNi3Q/1Ne7Giaw4Cp8cRqnT8qSTjcGPDJUjjjLbvi7pCzEWyBNlTQbrKWTJRn+AStuQEwvg==;EndpointSuffix=core.windows.net",
+    "ratingsdbtable": "ratings"
   }
 }

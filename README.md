@@ -61,7 +61,8 @@ Table service SAS URL:
 https://rumraisinstorage.table.core.windows.net/?sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2022-09-17T22:00:59Z&st=2022-09-14T14:00:59Z&spr=https,http&sig=1z%2BQ%2Bc%2B1ub7Z7%2BipDIYrjHYMdr1YsBb7T6fkSwSwqzA%3D
 
 TABLE:
-https://rumraisinstorage.table.core.windows.net/ratings
+https://rumraisinstorage.table.core.windows.net/ratings/?sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2022-09-17T22:00:59Z&st=2022-09-14T14:00:59Z&spr=https,http&sig=1z%2BQ%2Bc%2B1ub7Z7%2BipDIYrjHYMdr1YsBb7T6fkSwSwqzA%3D
+
 
 
 MANAGED IDs
@@ -96,3 +97,10 @@ var mongoClient = new MongoClient(settings);
 
 PRIMARY CONNECTION STRING
 mongodb://rumraisin-cosmosmongodb:LRCc2dBrv6BPO30yqRF3BcnrAshSJ68AcZcexrZRTQnaP2P7tpXD1y0jc9rTA6i66ukAlzeiXWNs22EOpLWv7Q==@rumraisin-cosmosmongodb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@rumraisin-cosmosmongodb@
+
+
+
+App Settings/Env Vars/os.environment Variables
+"sas_token" = just the sas token
+"table_connection_string" = the full table connection string
+

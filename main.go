@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 	"rumraisin-rating-app/rating"
+	"rumraisin-rating-app/ratingsdb"
 
 	"github.com/gin-gonic/gin"
 )
@@ -15,6 +17,11 @@ var USER = 0
 var PRODUCT = 1
 
 func main() {
+	if err := ratingsdb.New(); err != nil {
+		log.Fatal("Can not connect to DB", err)
+		return
+	}
+
 	port := ":8080"
 	if portParam, ok := os.LookupEnv("FUNCTIONS_CUSTOMHANDLER_PORT"); ok {
 		port = ":" + portParam
